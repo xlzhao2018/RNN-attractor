@@ -1,3 +1,18 @@
+Framework: Mimicking Attractor-Like Mechanisms and Persistent Activity in Recurrent Neural Networks
+1. Define the Model Architecture:
+•	We’ll create a Recurrent Neural Network (RNN) that simulates the attractor-like dynamics. The model will be designed to retain and reinforce certain patterns over time.
+•	We will use LSTM cells, which are ideal for modeling persistent activity due to their gating mechanisms (input, forget, and output gates).
+2. Task:
+•	The model will be trained to learn a sequence and to maintain its hidden state in an attractor-like manner, showing persistence in memory after the sequence ends.
+•	For simplicity, we will use a synthetic sequence of data where the model has to remember the last part of the sequence (analogous to Drosophila remembering rejection).
+3. Key Elements:
+•	Input Sequence: A synthetic sequence of binary values or a simple sinusoidal function.
+•	Recurrent Circuit: The LSTM network that processes the sequence step-by-step, reinforcing patterns.
+•	Persistent Activity: After the sequence ends, the model will predict the next steps, and we will observe whether it maintains the memory of the input sequence.
+4. Attractor Dynamics:
+•	We'll define the loss function in such a way that it encourages the network to stabilize on a certain pattern after receiving inputs, simulating the attractor-like mechanism.
+•	To observe attractor-like states, we will allow the model to predict additional time steps beyond the input sequence and evaluate how well the model maintains its state (persistent activity).
+
 Combining the idea of an attractor-like mechanism in neural networks with the concept of persistent activity contributing to memory formation provides a compelling explanation for how certain neural circuits, both biological and artificial, sustain activity over time to maintain memory.
 1. Attractor Networks in Neuroscience:
 •	Attractor Networks are a type of recurrent neural network where the dynamics of the system lead the network to settle into a stable state or "attractor." These attractors represent stable patterns of neural activity that correspond to specific memories or states.
